@@ -9,6 +9,7 @@ import { FiDownload } from "react-icons/fi";
 import { FaPlay } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import resumePDF from "../../assets/Pathakamuri_Siddartha_resume.pdf";
+import profilePic from "../../assets/Siddu-pic.jpeg";
 import { personalData } from "../../data/data";
 
 const Hero = () => {
@@ -99,9 +100,9 @@ const Hero = () => {
           <div className="relative h-[88%] w-fit flex items-center sm:items-end">
             <img
               data-aos="fade-up"
-              className=" h-[90%]  w-full object-cover md:h-[95%] md:m-auto sm:m-0"
-              src="https://i.postimg.cc/pTn61Gr1/Untitled-design222-modified.png"
-              // src={mine}
+              className=" h-[90%]  w-full object-cover md:h-[95%] md:m-auto sm:m-0 rounded-tl-3xl rounded-br-3xl"
+              // src="https://i.postimg.cc/pTn61Gr1/Untitled-design222-modified.png"
+              src={profilePic}
               alt="mine"
             />
             <div className=" absolute bottom-10 md:bottom-3 right-8 md:right-2">

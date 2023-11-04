@@ -44,12 +44,13 @@ const Resume = () => {
                   January 2021 - Present
                 </span>
                 <p className=" text-[.9rem] text-justify break-words text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi nihil aut quae obcaecati alias placeat totam aperiam
-                  pariatur quam? Accusantium minima aperiam error obcaecati
-                  autem doloribus deserunt qui, laborum incidunt amet, numquam
-                  eos cum tempora. Debitis, esse quae corporis deserunt officia
-                  quos in a, quaerat vero odio vitae.
+                  About 2.8 years of strong experience as a MEAN and MERN stack
+                  developer with solid understanding of front-end technologies
+                  and moderate database designing, I have worked on a wide
+                  variety of projects, from small-scale websites to complex web
+                  applications And I am constantly seeking out new ways to
+                  innovate and push the boundaries of what is possible on the
+                  web.
                 </p>
               </div>
             </div>
@@ -82,12 +83,11 @@ const Resume = () => {
                   Year 2017 - Year 2021
                 </span>
                 <p className=" text-[.9rem] text-justify text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi nihil aut quae obcaecati alias placeat totam aperiam
-                  pariatur quam? Accusantium minima aperiam error obcaecati
-                  autem doloribus deserunt qui, laborum incidunt amet, numquam
-                  eos cum tempora. Debitis, esse quae corporis deserunt officia
-                  quos in a, quaerat vero odio vitae.
+                  It's a four-year undergraduate program focused on computer
+                  technology, software development, and problem-solving skills.
+                  I equiped with a strong foundation in computer science,
+                  programming, and web development, making them proficient in
+                  various tech-related fields.
                 </p>
               </div>
             </div>
