@@ -26,6 +26,7 @@ export const data = [
 
 export const personalData = {
   fullName: "Pathakamuri Siddartha",
+  email: "siddusiddartha2000@gmail.com",
   linkedInUrl: "https://www.linkedin.com/in/pathakamuri-siddartha-671a9415a/",
   githubUrl: "https://github.com/Siddartha03",
   instagramUrl:

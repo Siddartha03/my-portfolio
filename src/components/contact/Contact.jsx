@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { RiSendPlaneFill } from "react-icons/ri";
+import { personalData } from "../../data/data";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div id="contact" className="container m-auto mt-16">
       {/* heading */}
@@ -40,27 +50,45 @@ const Contact = () => {
           <form
             data-aos="zoom-in"
             className="flex justify-center items-center flex-col gap-5 w-[70%] md:w-[100%] sm:w-[95%] mx-auto"
-            action="mailto:xyz@gmail.com"
+            action={`mailto:${personalData.email}?subject=(${name})${subject}&body=${message}`}
           >
             <input
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
+              type="text"
+              placeholder="Enter your name"
+              name="name"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <input
+              className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
               type="email"
-              placeholder="e.g. example@email.com"
-              name=""
+              placeholder="Enter your email"
+              name="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <input
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
               type="text"
-              placeholder="e.g. John Doe"
-              name=""
+              placeholder="Enter subject"
+              name="subject"
+              required
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
             />
             <textarea
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
               rows="4"
               cols="50"
               placeholder="Write your message"
-              name=""
+              name="message"
               id=""
+              required
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             />
             <button
               className="bg-yellow-500 w-full text-white font-semibold  p-2 rounded-lg flex items-center justify-center space-x-1"
