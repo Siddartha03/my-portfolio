@@ -14,6 +14,7 @@ import {
 import { GrCode } from "react-icons/gr";
 import { SiNextdotjs } from "react-icons/si";
 import { FaNodeJs, FaReact } from "react-icons/fa";
+import { SiCypress } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
 
 const Skills = ({ darkMode }) => {
@@ -53,6 +54,11 @@ const Skills = ({ darkMode }) => {
                 <ProgressBar logo={<SiAngular />} name={"Angular"} value={95} />
                 <ProgressBar logo={<FaNodeJs />} name={"Node Js"} value={80} />
                 <ProgressBar logo={<SiMongodb />} name={"MongoDB"} value={80} />
+                <ProgressBar
+                  logo={<SiCypress />}
+                  name={"Cypress (e2e)"}
+                  value={80}
+                />
               </div>
             </div>
           </div>

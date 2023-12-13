@@ -9,7 +9,7 @@ import { FiDownload } from "react-icons/fi";
 import { FaPlay } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import resumePDF from "../../assets/Pathakamuri_Siddartha_resume.pdf";
-import profilePic from "../../assets/Siddu-pic.jpeg";
+import profilePic from "../../assets/sid-background-gif.gif";
 import { personalData } from "../../data/data";
 
 const Hero = () => {
@@ -52,8 +52,12 @@ const Hero = () => {
               className="flex items-center gap-2 border- text-[1rem] bg-white border-black px-7 py-2 sm:px-6 rounded-lg font-bold  hover:text-yellow-500"
               download
             >
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 relative">
                 Resume <FiDownload />
+                <span className="absolute top-[-11px] right-[-31px] flex h-3 w-3">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                </span>
               </div>
             </a>
           </div>
@@ -102,7 +106,6 @@ const Hero = () => {
             <img
               data-aos="fade-up"
               className=" h-[90%]  w-full object-cover md:h-[95%] md:m-auto sm:m-0 rounded-tl-3xl rounded-br-3xl"
-              // src="https://i.postimg.cc/pTn61Gr1/Untitled-design222-modified.png"
               src={profilePic}
               alt="mine"
             />

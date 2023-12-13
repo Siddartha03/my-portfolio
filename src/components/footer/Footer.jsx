@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTelegramPlane } from "react-icons/fa";
+import { FaLinkedinIn, FaTelegramPlane } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { RiInstagramFill } from "react-icons/ri";
 import { personalData } from "../../data/data";
@@ -13,6 +13,16 @@ const Footer = () => {
         </h2>
         <div className=" flex items-center justify-center gap-8 sm:gap-5">
           <a
+            href={personalData.linkedInUrl}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            target="_blank"
+            className="box font-medium text-white   flex items-center justify-center flex-col"
+          >
+            <FaLinkedinIn className=" text-black text-3xl hover:scale-125 cursor-pointer" />
+            <p>LinkedIn</p>
+          </a>
+          <a
             data-aos="fade-up"
             data-aos-duration="1000"
             href={personalData.teligramUrl}
@@ -22,7 +32,7 @@ const Footer = () => {
             <FaTelegramPlane className=" text-black text-3xl hover:scale-125 cursor-pointer" />
             <p>Telegram</p>
           </a>
-          <a
+          {/* <a
             data-aos="fade-up"
             data-aos-duration="1200"
             href={personalData.whatsAppUrl}
@@ -31,7 +41,7 @@ const Footer = () => {
           >
             <IoLogoWhatsapp className=" text-black text-3xl hover:scale-125 cursor-pointer" />
             <p>WhatsApp</p>
-          </a>
+          </a> */}
           <a
             data-aos="fade-up"
             data-aos-duration="1400"
